@@ -1,0 +1,81 @@
+ * {
+     border: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Bebas Neue', cursive, sans-serif;
+ }
+
+ a:link,
+ a:visited,
+ a:active {
+     text-decoration: none;
+     color: black;
+ }
+
+ .encabezado h1 {
+     font-size: 3rem;
+ }
+
+ .encabezado__logo,
+ .encabezado__pie {
+     width: 100px;
+ }
+
+ .encabezado,
+ .pie {
+     background-color: white;
+ }
+
+ main {
+     background-color: darkgreen;
+ }
+
+ .parrafo-principal {
+     font-size: 5rem;
+     padding: 50px;
+     text-align: center;
+     color: white;
+ }
+
+ .parrafo-secundario {
+     font-size: 2rem;
+     padding: 50px;
+     text-align: center;
+     color: white;
+ }
+
+ .tabla {
+     background-color: white;
+ }
+
+ table,
+ th,
+ td {
+     border: 2px solid black;
+ }
+
+ .formulario {
+     background-color: white;
+     border: 1px solid black;
+ }
+
+ .item-formulario {
+     border: 1px solid black;
+ }
+
+ .galeria {
+     height: 100%;
+     width: 100vw;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+
+ .galeria img {
+     width: 300px;
+     height: 300px;
+ }
+
+ .galeria video {
+     width: 300px;
+     height: 300px;
+ }

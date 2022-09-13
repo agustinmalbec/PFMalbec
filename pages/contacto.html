@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/img/logo.png" alt="logo gimnasio" class="icono-club">
+        <h1><a href="../index.html">Gimnasio Sportivo Estudiantes</a></h1>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="precios.html">Precios y horarios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario">
+            <h2>Envianos tu consulta</h2>
+            <form action="">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email-personal" required class="item-formulario">
+                <label for="asunto">Asunto:</label>
+                <select name="asunto-de-consulta" id="asunto" class="item-formulario">
+                    <option value="precios">Precios</option>
+                    <option value="horarios">Horarios</option>
+                    <option value="clases">Clases</option>
+                    <option value="sugerencias">Sugerencias</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="mensaje">Consulta:</label>
+                <textarea name="mensaje-de-consulta" id="mensaje" cols="30" rows="10" required
+                    class="item-formulario"></textarea>
+                <input type="submit">
+            </form>
+        </section>
+        <section>
+            <h2>Ubicacion del gimnasio</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13340.670989119808!2d-66.3410976!3d-33.2882742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda85e349dd2dc0ef!2sGYM%20CLUB%20ESTUDIANTES.(ABIERTO%20PARA%20TODO%20PUBLICO)!5e0!3m2!1ses-419!2sar!4v1661433764886!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/img/logo.png" alt="logo gimnasio" class="icono-club">
+        <ul>
+            <li>2664547698</li>
+            <li>estudiantesgym</li>
+            <li>Gimnasio Sportivo Estudiantes</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
