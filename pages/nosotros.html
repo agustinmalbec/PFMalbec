@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +14,13 @@
 </head>
 
 <body>
-    <header>
-        <img src="../assets/img/logo.png" alt="logo gimnasio" class="icono-club">
-        <h1><a href="../index.html">Gimnasio Sportivo Estudiantes</a></h1>
-        <nav>
-            <ul>
+    <header class="encabezado">
+        <nav class="encabezado__nav">
+            <img src="../assets/img/logo.png" alt="logo gimnasio" class="encabezado__logo">
+            <h1 class="encabezado__titulo"><a href="../index.html">Gimnasio Sportivo Estudiantes</a></h1>
+            <input type="checkbox" id="check">
+            <label for="check"><i class='bx bx-menu'></i></label>
+            <ul class="encabezado__lista">
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="precios.html">Precios y horarios</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -26,9 +29,9 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="nosotros">
             <div>
-                <p class="parrafo-secundario">
+                <p class="nosotros__texto">
                     Somos un gimnasio conformado por profesores con gran experiencia en Ed. Física en la ciudad de San
                     Luis,
                     Argentina.
@@ -37,29 +40,32 @@
                     favorables en su vida.
                 </p>
             </div>
-            <img src="../assets/img/foto-nosotros1.jpg" alt="Chica en gimnasio">
+            <img src="../assets/img/foto-nosotros1.jpg" alt="Chica en gimnasio" class="nosotros__img">
         </section>
 
-        <section>
+        <section class="nosotros">
             <div>
-                <p class="parrafo-secundario">
+                <p class="nosotros__texto">
                     Gimnasio ubicado en la ciudad de San Luis, precisamente en zona universitaria. Nos distinguimos por
                     una extensa trayectoria de 30 años
                     Contamos con un servicio de gimnasio personalizado; salas de musculacion y amplia variedad de
                     clases.
                     Le ofrecemos al cliente seguridad al realizar cada actividad fisica para evitar futuras lesiones
                 </p>
-                <img src="../assets/img/foto-nosotros2.jpg" alt="Chico en gimnasio">
             </div>
+                <img src="../assets/img/foto-nosotros2.jpg" alt="Chico en gimnasio" class="nosotros__img">
         </section>
 
     </main>
-    <footer>
-        <img src="../assets/img/logo.png" alt="logo gimnasio" class="icono-club">
-        <ul>
-            <li>2664547698</li>
-            <li>estudiantesgym</li>
-            <li>Gimnasio Sportivo Estudiantes</li>
+    <footer class="pie">
+        <img src="../assets/img/logo.png" alt="logo gimnasio" class="pie__logo">
+        <ul class="pie__lista">
+            <li><i class='bx bxs-phone-call bx-flashing'></i>2664473767</li>
+            <li><i class='bx bxl-instagram-alt bx-flashing'></i><a href="https://www.instagram.com/estudiantesgym/"
+                    target="_blank">estudiantesgym</a></li>
+            <li><i class='bx bxl-facebook-circle bx-flashing'></i><a
+                    href="https://www.facebook.com/gimnasioclubestudiantes" target="_blank">Gimnasio Sportivo
+                    Estudiantes</a></li>
         </ul>
     </footer>
 </body>
