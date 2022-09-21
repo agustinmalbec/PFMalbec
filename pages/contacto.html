@@ -30,12 +30,12 @@
     </header>
     <main>
         <section class="formulario">
-            <h2>Envianos tu consulta</h2>
-            <form action="">
+            <h2 class="formulario__titulo">Envianos tu consulta</h2>
+            <form action="" class="formulario__elementos">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email-personal" required class="item-formulario">
+                <input type="email" id="email" name="email-personal" required class="formulario__item">
                 <label for="asunto">Asunto:</label>
-                <select name="asunto-de-consulta" id="asunto" class="item-formulario">
+                <select name="asunto-de-consulta" id="asunto" class="formulario__item">
                     <option value="precios">Precios</option>
                     <option value="horarios">Horarios</option>
                     <option value="clases">Clases</option>
@@ -44,16 +44,16 @@
                 </select>
                 <label for="mensaje">Consulta:</label>
                 <textarea name="mensaje-de-consulta" id="mensaje" cols="30" rows="10" required
-                    class="item-formulario"></textarea>
-                <input type="submit">
+                    class="formulario__item"></textarea>
+                <input type="submit" class="formulario__item">
             </form>
         </section>
         <section>
-            <h2>Ubicacion del gimnasio</h2>
+            <h2 class="formulario__titulo">Ubicacion del gimnasio</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13340.670989119808!2d-66.3410976!3d-33.2882742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda85e349dd2dc0ef!2sGYM%20CLUB%20ESTUDIANTES.(ABIERTO%20PARA%20TODO%20PUBLICO)!5e0!3m2!1ses-419!2sar!4v1661433764886!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </section>
     </main>
     <footer class="pie">

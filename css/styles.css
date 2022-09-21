@@ -1,6 +1,7 @@
  * {
      border: 0;
      padding: 0;
+     margin: 0;
      box-sizing: border-box;
      font-family: 'Bebas Neue', cursive, sans-serif;
      list-style: none;
@@ -17,7 +18,8 @@
 
  .encabezado,
  .pie {
-     background-color: white;
+    background-color: white;
+     
  }
 
  main {
@@ -33,6 +35,7 @@
      display: flex;
      justify-content: space-between;
  }
+
 
  .encabezado__titulo {
      align-self: center;
@@ -90,25 +93,27 @@
  /* Footer */
 
  .pie__lista {
-    font-size: 1rem;
-    justify-content: center;
-    text-align: center;
-}
+     font-size: 1rem;
+     justify-content: center;
+     text-align: center;
+     padding: 20px;
+ }
 
-.pie .bx {
-    font-size: 1rem;
-}
+ .pie .bx {
+     font-size: 1rem;
+ }
 
-.pie {
-    height: 100px;
-}
+ .pie {
+     height: 100px;
+ }
 
- @media (min-width: 600px) {
+ @media (min-width: 768px) {
      .encabezado {
          display: flex;
          justify-content: space-around;
          height: 15vh;
          color: #000;
+         padding: 15px;
      }
 
      .encabezado__nav .bx {
@@ -127,6 +132,7 @@
 
      .encabezado__lista a {
          color: #000;
+         font-size: 1.3rem;
      }
 
      .encabezado__lista li {
@@ -146,50 +152,36 @@
      }
 
      .encabezado__titulo {
-         font-size: 3rem;
+         font-size: 2rem;
          width: 50%;
      }
-     
-     .pie__lista{
-        display: flex;
-        width: 80%;
-        justify-content: space-around;
-        font-size: 1.3rem;
-        align-self: center;
+
+     .pie__lista {
+         display: flex;
+         width: 80%;
+         justify-content: space-around;
+         font-size: 1.3rem;
+         align-self: center;
      }
-     i{
-        font-size: 2rem;
-        padding: 15px;
+
+     i {
+         font-size: 2rem;
+         padding: 15px;
      }
-     
+
  }
 
+ @media (min-width: 1024px) {
+     .encabezado__titulo {
+         font-size: 3rem;
+     }
 
-
+     .encabezado__lista a {
+         font-size: 2rem;
+     }
+ }
 
  /* Portada */
-
-
-
- /* .portada {
-     display: flex;
-     align-items: center;
-     height: 75vh;
- }
-
- .portada__texto {
-    
-     font-size: 5rem;
-     padding: 50px;
-     text-align: center;
-     color: white;
- }
-
- .portada__img {
-     width: 50%;
-     object-fit: cover;
-     height: 100%;
- } */
 
  .portada {
      background-image: url(../assets/img/imagenindex.jpg);
@@ -200,8 +192,7 @@
  }
 
  .portada__texto {
-     background-color: rgba(172, 172, 172, 0.605);
-     color: darkgreen;
+     background: linear-gradient(180deg, rgba(126,126,126,0.2) 0%, rgba(255,255,255,0.9) 50%, rgba(126,126,126,0.2) 100%);
      font-size: 5rem;
      text-align: center;
 
@@ -212,61 +203,60 @@
  }
 
  /* Nosotros */
- 
- .nosotros{
-    display: flex;
-    flex-direction: column;
- }
- .nosotros__img{
-    height: 50%;
-    width: 100%;
- }
-.nosotros__texto{
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-}
 
-@media (min-width: 600px){
-    .nosotros{
-        flex-direction: row;
-        height: 50vh;
-    }
-    .nosotros__img{
-        width: 50vw;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
- /* Galeria */
-
- .galeria {
-     height: 100%;
-     width: 100vw;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
+ .nosotros {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
- .galeria img {
-     width: 300px;
-     height: 300px;
+ .nosotros__img {
+     height: 50%;
+     width: 100%;
  }
 
- .galeria video {
-     width: 300px;
-     height: 300px;
- }
-
- .parrafo-secundario {
+ .nosotros__texto {
      font-size: 2rem;
-     padding: 50px;
      text-align: center;
      color: white;
+     padding: 10px;
  }
 
- .tabla {
-     background-color: white;
+ @media (min-width: 768px) {
+     .nosotros {
+         flex-direction: row;
+         height: auto;
+     }
+
+     .nosotros__img {
+         width: 50vw;
+         height: 100%;
+         object-fit: cover;
+     }
+
+     .cambio {
+         flex-direction: row-reverse;
+     }
+
+     .nosotros__texto {
+         font-size: 1.4rem;
+     }
+ }
+
+ @media (min-width: 1024px) {
+     .nosotros__texto {
+         font-size: 2rem;
+     }
+ }
+
+ /* Precios */
+
+ .tabla__contenedor {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     text-align: center;
+     justify-content: center;
  }
 
  table,
@@ -275,28 +265,92 @@
      border: 2px solid black;
  }
 
+ .tabla__titulo {
+     font-size: 3rem;
+     color: darkgreen;
+ }
+
+ table {
+     background-color: rgba(0, 128, 0, 0.336);
+ }
+
+ /* Galeria */
+
+ .galeria {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: .5rem;
+ }
+
+ .galeria__tarjeta {
+     height: 400px;
+     width: 100%;
+     border-radius: 4px;
+ }
+
+ .galeria__tarjeta img,
+ .galeria__tarjeta video {
+     width: 100%;
+     height: 400px;
+     object-fit: cover;
+ }
+
+ .galeria__titulo {
+     grid-area: galeria__titulo;
+     text-align: center;
+     color: white;
+     font-size: 3rem;
+     padding: 20px;
+ }
+
+ @media (min-width: 768px) {
+     .galeria {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
+
+ @media (min-width: 1024px) {
+     .galeria {
+         grid-template-columns: repeat(4, 1fr);
+     }
+ }
+
+ /* Contacto */
+
  .formulario {
-     background-color: white;
-     border: 1px solid black;
+     background-color: darkgreen;
+     padding: 10px 30px;
  }
 
- .item-formulario {
-     border: 1px solid black;
+ .formulario__elementos {
+     display: grid;
  }
 
+ .formulario__item {
+     border-radius: 3px;
+     padding: 5px;
+     border: 2px solid black;
+ }
 
+ .formulario__titulo {
+     font-size: 3rem;
+     text-align: center;
+     padding: 20px;
+ }
 
- /* .pie {
-     height: 15vh;
-     display: flex;
-     justify-content: space-evenly;
+ .mapa {
+     width: 100%;
  }
- .pie__lista {
-    
-    display: flex;
+
+ @media (min-width: 768px) {
+     .formulario__elementos {
+         padding: 10px 200px;
+     }
+
+     .mapa {
+         display: block;
+         width: 80%;
+         margin: 0 auto;
+     }
  }
- .pie__lista li {
-    padding: 5px 30px;
-    ;
- }
-  */
