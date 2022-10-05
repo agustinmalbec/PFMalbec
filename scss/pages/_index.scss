@@ -1,0 +1,15 @@
+.portada {
+    background-image: url(../assets/img/imagenindex.jpg);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__texto {
+        background: linear-gradient(180deg, rgba(126,126,126,0.2) 0%, rgba(255,255,255,0.9) 50%, rgba(126,126,126,0.2) 100%);
+        font-size: 5rem;
+        text-align: center;
+    }
+    &__img {
+        display: none;
+    }
+}

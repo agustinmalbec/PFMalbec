@@ -1,0 +1,125 @@
+.encabezado {
+    background-color: $color-complementario;
+
+    &__nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__titulo {
+        align-self: center;
+        font-size: 2rem;
+        text-align: center;
+
+        @include tablet {
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
+
+        &:hover,
+        a:hover {
+            @include tablet {
+                color: $color-principal;
+                transition: .3s;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .bx {
+        color: black;
+        cursor: pointer;
+        font-size: 50px;
+        padding-top: 20px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__lista {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(1, 53, 1, 0.904);
+        text-align: center;
+        transition: all .5s;
+
+        @include tablet {
+            position: relative;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            top: 0;
+            background-color: white;
+        }
+
+        li {
+            display: none;
+            line-height: 30px;
+            margin: 70px 0;
+            transition: all .5s;
+
+            a.active,
+            a:hover {
+                color: greenyellow;
+                transition: .3s;
+
+                @include tablet {
+                    color: $color-principal;
+                    transition: .3s;
+                    transform: scale(1.1);
+                }
+            }
+
+            @include tablet {
+                display: flex;
+                padding: 0px 15px;
+                font-size: 1.5rem;
+                align-self: center;
+            }
+        }
+
+        a {
+            font-size: 2rem;
+            color: $color-complementario;
+
+            @include tablet {
+                color: #000;
+                font-size: 1.3rem;
+            }
+
+            @include desktop {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    #check {
+        display: none;
+
+        &:checked~.encabezado__lista {
+            height: 100vh;
+
+            li {
+                display: block;
+            }
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        height: 15vh;
+        color: #000;
+        padding: 15px;
+    }
+}

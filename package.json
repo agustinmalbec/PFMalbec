@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinmalbec/proyecto-coderhouse.git"
+  },
+  "author": "Francisco Agustin Malbec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agustinmalbec/proyecto-coderhouse/issues"
+  },
+  "homepage": "https://github.com/agustinmalbec/proyecto-coderhouse#readme",
+  "description": ""
+}

@@ -1,0 +1,24 @@
+.formulario {
+    background-color: $color-principal;
+    padding: 10px 30px;
+
+    &__elementos {
+        display: grid;
+
+        @include tablet {
+            padding: 10px 200px;
+        }
+    }
+
+    &__item {
+        border-radius: 3px;
+        padding: 5px;
+        border: 2px solid black;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        text-align: center;
+        padding: 20px;
+    }
+}

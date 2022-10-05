@@ -1,0 +1,9 @@
+.mapa {
+    width: 100%;
+
+    @include tablet {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
