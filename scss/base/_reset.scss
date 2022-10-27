@@ -15,4 +15,9 @@ a:active {
 
 main {
     background-color: $color-principal;
+    padding-top: 100px;
+
+    @include tablet {
+        padding-top: 150px;
+    }
 }

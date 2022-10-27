@@ -9,3 +9,11 @@
         @content;
     }
 }
+
+@mixin titulo {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-complementario;
+    background-color: black;
+    padding: 20px 0;
+}

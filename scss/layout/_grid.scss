@@ -18,10 +18,7 @@
     }
 
     &__titulo {
-        text-align: center;
-        color: white;
-        font-size: 3rem;
-        padding: 20px;
+        @include titulo();
     }
 
     @include tablet {

@@ -1,5 +1,7 @@
 .encabezado {
     background-color: $color-complementario;
+    position: fixed;
+    width: 100%;
 
     &__nav {
         height: 100px;
@@ -10,7 +12,7 @@
 
     &__titulo {
         align-self: center;
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
 
         @include tablet {
@@ -28,6 +30,7 @@
                 color: $color-principal;
                 transition: .3s;
                 transform: scale(1.1);
+                z-index: 20;
             }
         }
     }
@@ -118,8 +121,14 @@
     @include tablet {
         display: flex;
         justify-content: space-around;
-        height: 15vh;
+        height: 150px;
         color: #000;
         padding: 15px;
+
+        #check {
+            &:checked~.encabezado__lista {
+                height: 100px;
+            }
+        }
     }
 }

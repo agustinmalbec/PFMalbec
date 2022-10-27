@@ -5,24 +5,26 @@
         width: 100%;
         text-align: center;
         justify-content: center;
-        @include tablet{
-            padding: 0 100px;
+        background-color: $color-principal;
+    }
+
+    &__tabla {
+        background-color: rgba(209, 228, 209, 0.774);
+        border: 2px solid black;
+        font-size: .9rem;
+
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        @include tablet {
+            margin: 0 100px;
             font-size: 1.5rem;
         }
     }
 
     &__titulo {
-        font-size: 3rem;
-        color: $color-principal;
-    }
-}
-
-table {
-    background-color: rgba(0, 128, 0, 0.336);
-    border: 2px solid black;
-
-    th,
-    td {
-        border: 2px solid black;
+        @include titulo();
     }
 }

@@ -4,12 +4,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__texto {
-        background: linear-gradient(180deg, rgba(126,126,126,0.2) 0%, rgba(255,255,255,0.9) 50%, rgba(126,126,126,0.2) 100%);
+
+    &__tituloprincipal {
+        background: linear-gradient(180deg, rgba(126, 126, 126, 0.2) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(126, 126, 126, 0.2) 100%);
         font-size: 5rem;
         text-align: center;
     }
+
     &__img {
         display: none;
     }
+
+    &__item {
+        text-align: center;
+        font-size: 3rem;
+        background: rgb(4, 106, 2);
+        background: linear-gradient(180deg, rgba(4, 106, 2, 1) 0%, rgba(1, 36, 0, 1) 5%, rgba(1, 36, 0, 1) 95%, rgba(4, 106, 2, 1) 100%);
+        padding: 90px 30px;
+        color: $color-complementario;
+
+        &:hover {
+            transition: .3s;
+            background: $color-complementario;
+            color: black;
+        }
+    }
+
+    &__subtitulo {
+        @include titulo();
+    }
+
 }

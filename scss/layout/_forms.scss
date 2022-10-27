@@ -1,6 +1,19 @@
 .formulario {
     background-color: $color-principal;
-    padding: 10px 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-complementario;
+
+    @include tablet {
+
+        &__item {
+            font-size: 1rem;
+        }
+    }
+
+    &__label {
+        padding: 10px;
+    }
 
     &__elementos {
         display: grid;
@@ -17,8 +30,24 @@
     }
 
     &__titulo {
-        font-size: 3rem;
+        @include titulo();
+        width: 100%;
+    }
+
+    &__boton {
+        background-color: gray;
+        width: 50%;
         text-align: center;
-        padding: 20px;
+        border: 3px solid black;
+        margin: 20px;
+        font-size: 1.5rem;
+        justify-self: center;
+
+        &:hover {
+            transition: .3s;
+            transform: scale(1.1);
+            background-color: black;
+            color: $color-complementario;
+        }
     }
 }
